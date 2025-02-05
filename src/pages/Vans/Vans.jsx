@@ -12,6 +12,7 @@ export default function Home() {
         .catch(err => console.log(err))
     }, [])
     console.log(vanData)
+    
     const vanElements = vanData.map(van => (
         <div key={van.id} className="van-tile">
             <Link 

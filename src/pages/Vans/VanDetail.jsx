@@ -2,7 +2,7 @@ import { React, useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 
 export default function VanDetail() {
-  const [van, setVan] =useState({})
+  const [van, setVan] = useState({})
   const params = useParams()
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export default function VanDetail() {
 
   return (
     <div className="wrapper">
-      <div className="ven-detail-container">
+      <div className="van-detail-container">
         {van ? (
                 <div className="van-detail">
                     <img src={van.imageUrl} />
